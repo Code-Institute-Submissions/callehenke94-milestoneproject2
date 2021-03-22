@@ -15,7 +15,7 @@ function initMap() {
 }
 
 //Cursor//
-const src = "images/pin-icon.png";
+const src = "/images/pin-icon.png";
 const docStyle = document.body.style;
 document.querySelector('img').addEventListener('click', () => {
   if (!docStyle.cursor) docStyle.cursor = `url('${src}'), default`;
