@@ -1,4 +1,4 @@
-// Map function //
+// Map//
 let map;
 
 function initMap() {
@@ -12,4 +12,19 @@ function initMap() {
     map,
     title: "Hello World!",
   });
+}
+
+//Cursor//
+const src = "images/pin-icon.png";
+const docStyle = document.body.style;
+document.querySelector('img').addEventListener('click', () => {
+  if (!docStyle.cursor) docStyle.cursor = `url('${src}'), default`;
+  else docStyle.cursor = null;
+});
+
+//Text box//
+function selectText() {
+  const input = document.getElementById('text-box');
+  input.focus();
+  input.select();
 }
